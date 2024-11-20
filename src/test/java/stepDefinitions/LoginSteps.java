@@ -5,9 +5,9 @@ import org.junit.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.MyAccountPage;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.MyAccountPage;
 
 public class LoginSteps {
 	boolean targetPage;

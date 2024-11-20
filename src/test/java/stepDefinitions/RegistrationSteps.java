@@ -7,9 +7,9 @@ import org.junit.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.AccountRegistrationPage;
-import pages.HomePage;
-import pages.MyAccountPage;
+import pageObjects.AccountRegistrationPage;
+import pageObjects.HomePage;
+import pageObjects.MyAccountPage;
 import utils.CommonUtils;
 
 public class RegistrationSteps {

@@ -14,12 +14,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import constants.Cons;
 import driverManager.DriverManager;
-import pages.AccountRegistrationPage;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.MyAccountPage;
-import pages.PDP_Page;
-import pages.SearchResultsPage;
+import pageObjects.AccountRegistrationPage;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.MyAccountPage;
+import pageObjects.PDP_Page;
+import pageObjects.SearchResultsPage;
 
 public class CommonUtils {
 
