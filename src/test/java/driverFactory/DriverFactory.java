@@ -1,13 +1,13 @@
-package driverManager;
+package driverFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-import constants.Cons;
+import constantAttributes.Cons;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DriverManager {
+public class DriverFactory {
 	private static WebDriver driver=null;
 	
 	

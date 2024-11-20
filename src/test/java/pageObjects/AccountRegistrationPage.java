@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import driverManager.DriverManager;
+import driverFactory.DriverFactory;
 
 public class AccountRegistrationPage extends BasePage{
 
-	WebDriver driver = DriverManager.getDriver();
+	WebDriver driver = DriverFactory.getDriver();
 	private static AccountRegistrationPage registrationPageInstance;
 
 	public AccountRegistrationPage() {

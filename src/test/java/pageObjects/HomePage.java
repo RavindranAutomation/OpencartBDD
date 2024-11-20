@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import driverManager.DriverManager;
+import driverFactory.DriverFactory;
 
 public class HomePage extends BasePage {
 
-	WebDriver driver = DriverManager.getDriver();
+	WebDriver driver = DriverFactory.getDriver();
 	private static HomePage homePageInstance;
 
 	public HomePage() {

@@ -1,4 +1,4 @@
-package constants;
+package constantAttributes;
 
 public class Cons {
 	

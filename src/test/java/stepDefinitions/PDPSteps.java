@@ -4,7 +4,7 @@ import java.awt.AWTException;
 
 import org.testng.Assert;
 
-import driverManager.DriverManager;
+import driverFactory.DriverFactory;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.HomePage;
@@ -16,7 +16,7 @@ public class PDPSteps {
 
 	@When("User clicks on product image")
 	public void user_clicks_on_product_image() {
-		Assert.assertEquals(DriverManager.getDriver().getTitle(), "Search - iMac");
+		Assert.assertEquals(DriverFactory.getDriver().getTitle(), "Search - iMac");
 		SearchResultsPage.getInstance().clickImacImg();
 	}
 

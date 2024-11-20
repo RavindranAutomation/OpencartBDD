@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driverManager.DriverManager;
+import driverFactory.DriverFactory;
 
 public class SignUpPage {
-	WebDriver driver = DriverManager.getDriver();
+	WebDriver driver = DriverFactory.getDriver();
 	private static SignUpPage signUpPageInstance;
 
 	public SignUpPage() {

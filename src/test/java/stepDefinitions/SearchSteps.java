@@ -2,8 +2,8 @@ package stepDefinitions;
 
 import org.junit.Assert;
 
-import constants.Cons;
-import driverManager.DriverManager;
+import constantAttributes.Cons;
+import driverFactory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -33,7 +33,7 @@ public class SearchSteps {
 
 	@Then("User should get valid product displayed in search results")
 	public void user_should_get_valid_product_displayed_in_search_results() throws InterruptedException {
-		Assert.assertEquals("Search - iMac", DriverManager.getDriver().getTitle());
+		Assert.assertEquals("Search - iMac", DriverFactory.getDriver().getTitle());
 		boolean iMacImage = SearchResultsPage.getInstance().isiMacDisplayed();
 		boolean iMacName = SearchResultsPage.getInstance().isiMacNameDisplayed();
 		Assert.assertEquals(true, iMacImage);

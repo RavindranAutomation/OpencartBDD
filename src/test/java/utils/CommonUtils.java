@@ -12,8 +12,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
-import constants.Cons;
-import driverManager.DriverManager;
+import constantAttributes.Cons;
+import driverFactory.DriverFactory;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
@@ -47,17 +47,17 @@ public class CommonUtils {
 	}
 
 	public static void initWebElement() {
-		PageFactory.initElements(DriverManager.getDriver(), HomePage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), MyAccountPage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), LoginPage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), SearchResultsPage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), AccountRegistrationPage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), PDP_Page.getInstance());
+		PageFactory.initElements(DriverFactory.getDriver(), HomePage.getInstance());
+		PageFactory.initElements(DriverFactory.getDriver(), MyAccountPage.getInstance());
+		PageFactory.initElements(DriverFactory.getDriver(), LoginPage.getInstance());
+		PageFactory.initElements(DriverFactory.getDriver(), SearchResultsPage.getInstance());
+		PageFactory.initElements(DriverFactory.getDriver(), AccountRegistrationPage.getInstance());
+		PageFactory.initElements(DriverFactory.getDriver(), PDP_Page.getInstance());
 		
 	}
 
 	public static void takeScreenshot(String screenshotNameWithExtension) {
-		TakesScreenshot screenshot = (TakesScreenshot) DriverManager.getDriver();
+		TakesScreenshot screenshot = (TakesScreenshot) DriverFactory.getDriver();
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(source, new File(screenshotNameWithExtension));

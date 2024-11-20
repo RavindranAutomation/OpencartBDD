@@ -7,11 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import basetTest.ElementUtils;
-import driverManager.DriverManager;
+import driverFactory.DriverFactory;
 
-public class ProductsPage extends ElementUtils{
-	WebDriver driver = DriverManager.getDriver();
+public class ProductsPage{
+	WebDriver driver = DriverFactory.getDriver();
 	private static ProductsPage productsPageInstance;
 
 	public ProductsPage() {
@@ -56,7 +55,7 @@ public class ProductsPage extends ElementUtils{
 		WebElement blueTops= driver.findElement(blueTopsProduct);
 		Actions a = new Actions(driver);
 		a.moveToElement(blueTops).build().perform();
-		ElementUtils.clickOnElement(blueTopsAddToCart, 5);
+		
 
 	}
 

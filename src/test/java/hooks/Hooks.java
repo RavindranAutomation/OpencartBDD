@@ -5,15 +5,12 @@ import java.time.Duration;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import constants.Cons;
-import driverManager.DriverManager;
-import io.cucumber.java.After;
+import constantAttributes.Cons;
+import driverFactory.DriverFactory;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import pageObjects.HomePage;
-import pageObjects.MyAccountPage;
 import utils.CommonUtils;
 
 public class Hooks {
@@ -21,11 +18,11 @@ public class Hooks {
 	@Before
 	public void beforeScenario() {
 		CommonUtils.loadProperties();
-		if (DriverManager.getDriver() == null) {
-			DriverManager.launchBrowser();
-			DriverManager.getDriver().get(Cons.Url);
-			DriverManager.getDriver().manage().window().maximize();
-			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		if (DriverFactory.getDriver() == null) {
+			DriverFactory.launchBrowser();
+			DriverFactory.getDriver().get(Cons.Url);
+			DriverFactory.getDriver().manage().window().maximize();
+			DriverFactory.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			CommonUtils.initWebElement();
 		}
 
@@ -35,7 +32,7 @@ public class Hooks {
 	public static void takeScreenshot(Scenario scenario) {
 		String scenarioName = scenario.getName();
 		if (scenario.isFailed()) {
-			byte[] screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+			byte[] screenshot = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "Failed  - " + scenarioName);
 		}
 
@@ -45,7 +42,7 @@ public class Hooks {
 
 	@AfterAll
 	public static void tearDown() {
-		DriverManager.getDriver().quit();
+		DriverFactory.getDriver().quit();
 	}
 
 
