@@ -11,35 +11,34 @@ import pageObjects.MyAccountPage;
 
 public class LoginSteps {
 	boolean targetPage;
-
 	@Given("User navigates to login page")
 	public void user_navigates_to_login_page() {
-
 		HomePage.getInstance().clickMyAccount();
 		HomePage.getInstance().clickLogin();
-
 	}
-
 	@When("User enters email address {string} into email field")
 	public void user_enters_email_address_into_email_field(String email) {
 		LoginPage.getInstance().setEmail(email);
 	}
-
 	@When("User enters password {string} into password field")
-	public void user_enters_password_into_password_field(String password) {
-		LoginPage.getInstance().setPassword(password);
+	public void user_enters_password_into_password_field(String pass) {
+		LoginPage.getInstance().setPassword(pass);
 	}
-
 	@When("User clicks on Login button")
 	public void user_clicks_on_login_button() {
 		LoginPage.getInstance().clickLogin();
 	}
-
 	@Then("User should get successfully logged in")
 	public void user_should_get_successfully_logged_in() {
 		targetPage = MyAccountPage.getInstance().isMyAccountPageExists();
 		Assert.assertTrue(targetPage);
 	}
+	@Then("User should logout")
+	public void user_should_logout() {
+		HelperSteps.logoutApp();
+	}
+
+	
 
 	@Then("User should not get successfully logged in")
 	public void user_should_not_get_successfully_logged_in() {
@@ -56,11 +55,7 @@ public class LoginSteps {
 		}
 	}
 
-	@Then("User should logout")
-	public void user_should_logout() {
-		HelperSteps.logoutApp();
-
-	}
+	
 
 	@When("User enters email as {string}")
 	public void user_enters_email_as(String email) {
@@ -86,5 +81,5 @@ public class LoginSteps {
 			Assert.fail("Testcase is failed");
 		}
 	}
-
+	
 }
