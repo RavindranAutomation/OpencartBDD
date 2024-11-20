@@ -5,12 +5,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CheckoutPage extends BasePage {
+WebDriver driver = DriverManager.getDriver();
+	private static CheckoutPage chckoutPageInstance;
 
-	
+	public CheckoutPage() {
 
-	public CheckoutPage(WebDriver driver) {
-		super(driver);
-		
+	}
+
+	public static CheckoutPage getInstance() {
+		if (chckoutPageInstance == null) {
+			chckoutPageInstance = new CheckoutPage();
+
+		}
+
+		return chckoutPageInstance;
 	}
 
 
