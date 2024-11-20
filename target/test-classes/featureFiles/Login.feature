@@ -1,5 +1,6 @@
 Feature: Login functionality
 
+  @Sanity @Regression @Master
   Scenario Outline: Login with valid credentials
     Given User navigates to login page
     When User enters email address "<email>" into email field
@@ -13,6 +14,7 @@ Feature: Login functionality
       | ravindrann10898@gmail.com | Test@12345 |
       | ravikn@yopmail.com        | Test@12345 |
 
+  @Sanity @Regression @Master
   Scenario Outline: Login with invalid credentials
     Given User navigates to login page
     When User enters email address "<email>" into email field

@@ -75,6 +75,16 @@ public class SearchResultsPage extends BasePage{
 	@FindBy(xpath = "//input[@id='button-search']//following::p[1]")
 	WebElement searchCriteriaNotMetMessage;
 	
+	@FindBy(xpath ="//div[@id='cart']")
+	WebElement cartButton;
+	
+	@FindBy(xpath = "//button[@title='Remove']")
+	WebElement cartButtonPopupCloseBtn;
+	
+	@FindBy(xpath = "//table[@class='table table-striped']//tr/td[2]/a")
+	WebElement cartButtonProductName;
+	
+	
 	public String verifyResultsHeader() {
 		return searchResultsHeader.getText();
 
@@ -177,5 +187,21 @@ public class SearchResultsPage extends BasePage{
 	public String getSearchCriteriaNotMetMessage() {
 	return getTextFromElement(searchCriteriaNotMetMessage, 2);
 	}
+	
+	public void clickCartBtn() {
+		clickOnElement(cartButton, 2);
 
+	}
+	
+	public boolean isProductNameVisibleOnPopup() {
+		return cartButtonProductName.isDisplayed();
+
+	}
+	
+	public void clickCloseBtn() {
+		javaScriptClick(cartButtonPopupCloseBtn, 3);
+
+	}
 }
+
+

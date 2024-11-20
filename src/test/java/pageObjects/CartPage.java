@@ -4,13 +4,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import driverManager.DriverManager;
+
 public class CartPage extends BasePage {
+	WebDriver driver = DriverManager.getDriver();
+	private static CartPage cartPageInstance;
 
-	
+	public CartPage() {
 
-	public CartPage(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
+	}
+
+	public static CartPage getInstance() {
+		if (cartPageInstance == null) {
+			cartPageInstance = new CartPage();
+
+		}
+
+		return cartPageInstance;
 	}
 
 	@FindBy(xpath = "(//a[@href='http://localhost/opencart/upload/index.php?route=checkout/cart'])[3]")

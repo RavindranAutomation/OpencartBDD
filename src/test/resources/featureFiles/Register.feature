@@ -1,5 +1,6 @@
 Feature: Registration functionality
 
+  @Sanity @Regression @Master
   Scenario: User creates an account only with mandatory fields
     Given User navigates to Register Account page
     When User enters the values in the mandatory fields
@@ -7,6 +8,7 @@ Feature: Registration functionality
     And User clicks on Continue button
     Then User account should get created successfully
 
+  @Sanity @Regression @Master
   Scenario: User creates a duplicate account
     Given User navigates to Register Account page
     When User enters the details into below fields with duplicate email

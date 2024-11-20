@@ -58,8 +58,7 @@ public class LoginSteps {
 
 	@Then("User should logout")
 	public void user_should_logout() {
-		HomePage.getInstance().clickMyAccount();
-		MyAccountPage.getInstance().clickLogout();
+		HelperSteps.logoutApp();
 
 	}
 

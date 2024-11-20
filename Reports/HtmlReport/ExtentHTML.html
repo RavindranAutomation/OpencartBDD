@@ -48,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 20, 2024 03:46:23 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 20, 2024 04:56:34 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -126,7 +126,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>4</span> scenarios passed</span>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -146,7 +146,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>44</span> steps passed</span>
+                    <span class='strong'>8</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -175,8 +175,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login functionality</span>
-						<span class='test-time'>Nov 20, 2024 03:46:24 pm</span>
+						<span class='test-name'>Add to cart functionality</span>
+						<span class='test-time'>Nov 20, 2024 04:56:35 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -187,321 +187,55 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario outline node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 11.814</span>
+	<span class='duration right label'>00 00 07.791</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User adding product into cart from search results page</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>pass</td></tr><tr><td>ravindrann10898@gmail.com</td><td>Test@12345</td></tr><tr><td>ravikn@yopmail.com</td><td>Test@12345</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid credentials</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.SearchSteps.user_opens_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens the Application</div>
 
 
-			<ul class='gc steps'>
-				<li test-id='5' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
-
-				</li>
-				<li test-id='6' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded1.png' src='../../screenshot/embedded1.png'>
-							</div>
-				</li>
-				<li test-id='7' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravindrann10898@gmail.com" into email field</h6>
-
-				</li>
-				<li test-id='8' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded2.png' src='../../screenshot/embedded2.png'>
-							</div>
-				</li>
-				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@12345" into password field</h6>
-
-				</li>
-				<li test-id='10' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded3.png' src='../../screenshot/embedded3.png'>
-							</div>
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
-
-				</li>
-				<li test-id='12' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded4.png' src='../../screenshot/embedded4.png'>
-							</div>
-				</li>
-				<li test-id='13' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get successfully logged in</h6>
-
-				</li>
-				<li test-id='14' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded5.png' src='../../screenshot/embedded5.png'>
-							</div>
-				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_logout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</h6>
-
-				</li>
-				<li test-id='16' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded6.png' src='../../screenshot/embedded6.png'>
-							</div>
-				</li>
-			</ul>
 		</li>
-		<li test-id='17' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid credentials</div>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.SearchSteps.user_enters_valid_product_into_search_box_field(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid product "iMac" into Search box field</div>
 
 
-			<ul class='gc steps'>
-				<li test-id='19' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
-
-				</li>
-				<li test-id='20' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded7.png' src='../../screenshot/embedded7.png'>
-							</div>
-				</li>
-				<li test-id='21' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravikn@yopmail.com" into email field</h6>
-
-				</li>
-				<li test-id='22' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded8.png' src='../../screenshot/embedded8.png'>
-							</div>
-				</li>
-				<li test-id='23' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@12345" into password field</h6>
-
-				</li>
-				<li test-id='24' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded9.png' src='../../screenshot/embedded9.png'>
-							</div>
-				</li>
-				<li test-id='25' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
-
-				</li>
-				<li test-id='26' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded10.png' src='../../screenshot/embedded10.png'>
-							</div>
-				</li>
-				<li test-id='27' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get successfully logged in</h6>
-
-				</li>
-				<li test-id='28' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded11.png' src='../../screenshot/embedded11.png'>
-							</div>
-				</li>
-				<li test-id='29' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_logout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</h6>
-
-				</li>
-				<li test-id='30' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded12.png' src='../../screenshot/embedded12.png'>
-							</div>
-				</li>
-			</ul>
 		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='31' status='pass'>
-
-	<span class='duration right label'>00 00 06.087</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with invalid credentials</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>pass</td></tr><tr><td>ravindn10898@gmail.com</td><td>Test@1345</td></tr><tr><td>ravik23n@yopmail.com</td><td>Test@145</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='32' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with invalid credentials</div>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</div>
 
 
-			<ul class='gc steps'>
-				<li test-id='34' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
-
-				</li>
-				<li test-id='35' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded13.png' src='../../screenshot/embedded13.png'>
-							</div>
-				</li>
-				<li test-id='36' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravindn10898@gmail.com" into email field</h6>
-
-				</li>
-				<li test-id='37' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded14.png' src='../../screenshot/embedded14.png'>
-							</div>
-				</li>
-				<li test-id='38' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@1345" into password field</h6>
-
-				</li>
-				<li test-id='39' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded15.png' src='../../screenshot/embedded15.png'>
-							</div>
-				</li>
-				<li test-id='40' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
-
-				</li>
-				<li test-id='41' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded16.png' src='../../screenshot/embedded16.png'>
-							</div>
-				</li>
-				<li test-id='42' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should not get successfully logged in</h6>
-
-				</li>
-				<li test-id='43' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded17.png' src='../../screenshot/embedded17.png'>
-							</div>
-				</li>
-			</ul>
 		</li>
-		<li test-id='44' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with invalid credentials</div>
+		<li test-id='10' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.SearchSteps.user_should_get_valid_product_displayed_in_search_results())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get valid product displayed in search results</div>
 
 
-			<ul class='gc steps'>
-				<li test-id='46' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
+		</li>
+		<li test-id='12' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.AddToCartSteps.user_clicks_on_add_to_cart_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on Add to cart button</div>
 
-				</li>
-				<li test-id='47' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded18.png' src='../../screenshot/embedded18.png'>
-							</div>
-				</li>
-				<li test-id='48' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravik23n@yopmail.com" into email field</h6>
+		</li>
+		<li test-id='14' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.AddToCartSteps.user_should_see_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see "Success: You have added iMac to your shopping cart!" message</div>
 
-				</li>
-				<li test-id='49' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded19.png' src='../../screenshot/embedded19.png'>
-							</div>
-				</li>
-				<li test-id='50' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@145" into password field</h6>
+		</li>
+		<li test-id='16' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.AddToCartSteps.user_clicks_on_cart_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on CartButton</div>
 
-				</li>
-				<li test-id='51' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded20.png' src='../../screenshot/embedded20.png'>
-							</div>
-				</li>
-				<li test-id='52' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
+		</li>
+		<li test-id='18' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.AddToCartSteps.user_should_see_added_product_in_the_popup())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see added product in the popup</div>
 
-				</li>
-				<li test-id='53' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded21.png' src='../../screenshot/embedded21.png'>
-							</div>
-				</li>
-				<li test-id='54' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should not get successfully logged in</h6>
-
-				</li>
-				<li test-id='55' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">Passed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded22.png' src='../../screenshot/embedded22.png'>
-							</div>
-				</li>
-			</ul>
 		</li>
 	</ul>
 </div>
@@ -543,31 +277,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>44</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 20, 2024 03:46:23 pm</div>
+					<div class='panel-lead'>Nov 20, 2024 04:56:34 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 20, 2024 03:46:42 pm</div>
+			 		<div class='panel-lead'>Nov 20, 2024 04:56:43 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 19.594</div>
+					<div class='panel-lead'>00 00 09.276</div>
 				</div>
 			</div>
 		</div>
@@ -585,16 +319,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 4,
-				passChild: 4,
+				childCount: 1,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 44,
-				passGrandChild: 44,
+				grandChildCount: 8,
+				passGrandChild: 8,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -606,7 +340,7 @@
 		
 		<script>
 			var timeline = {
-			        "Login functionality":17.935
+			        "Add to cart functionality":7.796
 			};
 		</script>
 		
