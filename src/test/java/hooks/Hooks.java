@@ -12,6 +12,8 @@ import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import pageObjects.HomePage;
+import pageObjects.MyAccountPage;
 import utils.CommonUtils;
 
 public class Hooks {
@@ -35,12 +37,11 @@ public class Hooks {
 		if (scenario.isFailed()) {
 			byte[] screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "Failed  - " + scenarioName);
-		}if (scenario.isFailed()==false) {
-			byte[] screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
-			scenario.attach(screenshot, "image/png", "Passed  - "+ scenarioName);
 		}
 
 	}
+	
+	
 
 	@AfterAll
 	public static void tearDown() {
