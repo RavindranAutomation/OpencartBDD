@@ -7,10 +7,10 @@ import org.testng.Assert;
 import driverManager.DriverManager;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.HomePage;
-import pages.MyAccountPage;
-import pages.PDP_Page;
-import pages.SearchResultsPage;
+import pageObjects.HomePage;
+import pageObjects.MyAccountPage;
+import pageObjects.PDP_Page;
+import pageObjects.SearchResultsPage;
 
 public class PDPSteps {
 

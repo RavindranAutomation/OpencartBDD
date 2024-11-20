@@ -7,9 +7,9 @@ import driverManager.DriverManager;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.SearchResultsPage;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.SearchResultsPage;
 
 public class SearchSteps {
 
