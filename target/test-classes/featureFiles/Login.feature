@@ -12,7 +12,6 @@ Feature: Login functionality
     Examples: 
       | email                     | pass       |
       | ravindrann10898@gmail.com | Test@12345 |
-      | ravikn@yopmail.com        | Test@12345 |
 
   @Sanity @Regression @Master
   Scenario Outline: Login with invalid credentials

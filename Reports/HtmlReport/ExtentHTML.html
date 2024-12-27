@@ -39,7 +39,6 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 22, 2024 01:25:37 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 28, 2024 12:06:07 am</span>
 			</a>
 		</ul>
 	</div>
@@ -71,18 +70,6 @@
 			</div>
 			<!-- test toggle -->
 			<!-- category toggle -->
-			<div class='chip transparent'>
-				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-				<i class='material-icons'>local_offer</i> Category
-				</a>
-				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Regression</a></li>
-					<li><a href='#'>@Sanity</a></li>
-					<li><a href='#'>@Master</a></li>
-					<li class='divider'></li>
-					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
-				</ul>
-			</div>
 			<!-- category toggle -->
 			<!-- clear filters -->
 			<div class='chip transparent hide'>
@@ -139,7 +126,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>4</span> scenarios passed</span>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -159,7 +146,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>22</span> steps passed</span>
+                    <span class='strong'>10</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -188,8 +175,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login functionality</span>
-						<span class='test-time'>Nov 22, 2024 01:25:38 pm</span>
+						<span class='test-name'>Checkout functionality</span>
+						<span class='test-time'>Dec 28, 2024 12:06:09 am</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -200,165 +187,65 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario outline node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 09.401</span>
+	<span class='duration right label'>00 00 06.351</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User navigate to Checkout page from shoppingcart page</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>pass</td></tr><tr><td>ravindrann10898@gmail.com</td><td>Test@12345</td></tr><tr><td>ravikn@yopmail.com</td><td>Test@12345</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid credentials</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_opens_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens the Application</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Sanity</span>
-						<span class='category label'>@Regression</span>
-						<span class='category label'>@Master</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='5' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
-
-				</li>
-				<li test-id='7' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravindrann10898@gmail.com" into email field</h6>
-
-				</li>
-				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@12345" into password field</h6>
-
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
-
-				</li>
-				<li test-id='13' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get successfully logged in</h6>
-
-				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_logout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</h6>
-
-				</li>
-			</ul>
 		</li>
-		<li test-id='17' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid credentials</div>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_enters_valid_product_into_search_box_field(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid product "iMac" into Search box field</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Sanity</span>
-						<span class='category label'>@Regression</span>
-						<span class='category label'>@Master</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='19' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
-
-				</li>
-				<li test-id='21' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravikn@yopmail.com" into email field</h6>
-
-				</li>
-				<li test-id='23' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@12345" into password field</h6>
-
-				</li>
-				<li test-id='25' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
-
-				</li>
-				<li test-id='27' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get successfully logged in</h6>
-
-				</li>
-				<li test-id='29' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_logout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</h6>
-
-				</li>
-			</ul>
 		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='31' status='pass'>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</div>
 
-	<span class='duration right label'>00 00 02.798</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with invalid credentials</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>pass</td></tr><tr><td>ravindn10898@gmail.com</td><td>Test@1345</td></tr><tr><td>ravik23n@yopmail.com</td><td>Test@145</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='32' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with invalid credentials</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Sanity</span>
-						<span class='category label'>@Regression</span>
-						<span class='category label'>@Master</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='34' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
-
-				</li>
-				<li test-id='36' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravindn10898@gmail.com" into email field</h6>
-
-				</li>
-				<li test-id='38' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@1345" into password field</h6>
-
-				</li>
-				<li test-id='40' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
-
-				</li>
-				<li test-id='42' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should not get successfully logged in</h6>
-
-				</li>
-			</ul>
 		</li>
-		<li test-id='44' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with invalid credentials</div>
+		<li test-id='10' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_should_get_valid_product_displayed_in_search_results())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get valid product displayed in search results</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Sanity</span>
-						<span class='category label'>@Regression</span>
-						<span class='category label'>@Master</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='46' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
+		</li>
+		<li test-id='12' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.AddToCartSteps.user_clicks_on_add_to_cart_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on Add to cart button</div>
 
-				</li>
-				<li test-id='48' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravik23n@yopmail.com" into email field</h6>
 
-				</li>
-				<li test-id='50' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@145" into password field</h6>
+		</li>
+		<li test-id='14' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.AddToCartSteps.user_should_see_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see "Success: You have added iMac to your shopping cart!" message</div>
 
-				</li>
-				<li test-id='52' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
 
-				</li>
-				<li test-id='54' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should not get successfully logged in</h6>
+		</li>
+		<li test-id='16' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.ShoppingCartSteps.user_clicks_shopping_cart_link_from_popup_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks shopping cart link from popup message</div>
 
-				</li>
-			</ul>
+
+		</li>
+		<li test-id='18' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.ShoppingCartSteps.user_should_be_taken_to_the_shopping_cart_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should be taken to the Shopping cart page</div>
+
+
+		</li>
+		<li test-id='20' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.ShoppingCartSteps.user_clicks_on_the_checkout_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on the checkout button</div>
+
+
+		</li>
+		<li test-id='22' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.CheckoutSteps.user_should_be_taken_to_the_checkoutpage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should be taken to the Checkoutpage</div>
+
+
 		</li>
 	</ul>
 </div>
@@ -386,178 +273,7 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><div id='category-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='category-collection' class='category-collection'>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Regression</span>
-						<span class='category-status right'>
-						<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 22, 2024 01:25:38 pm</td>
-										<td class='linked' test-id='3'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:46 pm</td>
-										<td class='linked' test-id='17'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:48 pm</td>
-										<td class='linked' test-id='32'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:49 pm</td>
-										<td class='linked' test-id='44'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Sanity</span>
-						<span class='category-status right'>
-						<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 22, 2024 01:25:38 pm</td>
-										<td class='linked' test-id='3'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:46 pm</td>
-										<td class='linked' test-id='17'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:48 pm</td>
-										<td class='linked' test-id='32'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:49 pm</td>
-										<td class='linked' test-id='44'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Master</span>
-						<span class='category-status right'>
-						<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 22, 2024 01:25:38 pm</td>
-										<td class='linked' test-id='3'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:46 pm</td>
-										<td class='linked' test-id='17'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:48 pm</td>
-										<td class='linked' test-id='32'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 22, 2024 01:25:49 pm</td>
-										<td class='linked' test-id='44'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='category-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -571,73 +287,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 22, 2024 01:25:37 pm</div>
+					<div class='panel-lead'>Dec 28, 2024 12:06:07 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 22, 2024 01:25:51 pm</div>
+			 		<div class='panel-lead'>Dec 28, 2024 12:06:15 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 14.083</div>
-				</div>
-			</div>
-			<div class='col s6'>
-				<div class='card-panel dashboard-categories'>
-					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
-					
-					<table>
-						<tr>
-							<th>Name</th>
-							<th>Passed</th>
-							<th>Failed</th>
-							<th>Skipped</th>
-							<th>Passed %</th>
-						</tr>
-						<tr>
-							<td>@Regression</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Sanity</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Master</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-					</table>
+					<div class='panel-lead'>00 00 07.784</div>
 				</div>
 			</div>
 		</div>
@@ -655,16 +329,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 4,
-				passChild: 4,
+				childCount: 1,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 22,
-				passGrandChild: 22,
+				grandChildCount: 10,
+				passGrandChild: 10,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -676,7 +350,7 @@
 		
 		<script>
 			var timeline = {
-			        "Login functionality":12.237
+			        "Checkout functionality":6.355
 			};
 		</script>
 		
