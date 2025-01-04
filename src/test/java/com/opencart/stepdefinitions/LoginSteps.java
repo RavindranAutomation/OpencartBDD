@@ -14,6 +14,7 @@ public class LoginSteps {
 	boolean targetPage;
 	@Given("User navigates to login page")
 	public void user_navigates_to_login_page() {
+	
 		HelperSteps.LoginApp();
 	}
 	@When("User enters email address {string} into email field")

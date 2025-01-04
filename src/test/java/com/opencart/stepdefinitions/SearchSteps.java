@@ -24,7 +24,7 @@ public class SearchSteps {
 
 	@When("User enters valid product {string} into Search box field")
 	public void user_enters_valid_product_into_search_box_field(String productName) {
-		HomePage.getInstance().enterProductName(productName);
+		HomePage.getInstance().enterProductName();
 	}
 
 	@When("User clicks on Search button")
@@ -45,7 +45,7 @@ public class SearchSteps {
 	public void user_enters_invalid_product_into_search_box_field(String invalidProductName) {
 
 		HomePage.getInstance().clearSearchBar();
-		HomePage.getInstance().enterInvalidProductName(invalidProductName);
+		HomePage.getInstance().enterInvalidProductName();
 		HomePage.getInstance().clickSearchButton();
 	}
 

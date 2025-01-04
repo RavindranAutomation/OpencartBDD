@@ -12,8 +12,6 @@ import com.opencart.driverfactory.DriverFactory;
 
 public class PDP_Page extends BasePage {
 
-	
-
 	WebDriver driver = DriverFactory.getDriver();
 	private static PDP_Page pdpPageInstance;
 
@@ -30,16 +28,16 @@ public class PDP_Page extends BasePage {
 		return pdpPageInstance;
 	}
 
-	@FindBy(xpath = "//img[@src='http://localhost/opencart/upload/image/cache/catalog/demo/imac_1-228x228.jpg']")
+	@FindBy(xpath = "(//img[@title='iMac'])[1]")
 	WebElement imacThumbnailImg;
 
 	@FindBy(xpath = "//button[@title='Next (Right arrow key)']")
 	WebElement nextArrowBtn;
 
-	@FindBy(xpath = "//img[@src='http://localhost/opencart/upload/image/cache/catalog/demo/imac_3-74x74.jpg']")
+	@FindBy(xpath = "//div[@class='mfp-figure']//img[1]")
 	WebElement iMacSideView;
 
-	@FindBy(xpath = "//img[@src='http://localhost/opencart/upload/image/cache/catalog/demo/imac_2-74x74.jpg']")
+	@FindBy(xpath = "//div[@class='mfp-figure']//img[1]")
 	WebElement iMacTiltView;
 
 	@FindBy(xpath = "//div[@class='btn-group']//following::h1")
@@ -99,7 +97,7 @@ public class PDP_Page extends BasePage {
 			clickOnElement(iMacSideView, 0);
 		} catch (Exception e) {
 			jSClick(iMacSideView);
-	
+
 		}
 		Thread.sleep(1000);
 		Robot r = new Robot();
@@ -114,9 +112,8 @@ public class PDP_Page extends BasePage {
 	}
 
 	public void clickiMacTiltVieww() throws AWTException, InterruptedException {
-		
-			jSClick(iMacTiltView);
-	
+
+		jSClick(iMacTiltView);
 
 		Thread.sleep(1000);
 		Robot r = new Robot();

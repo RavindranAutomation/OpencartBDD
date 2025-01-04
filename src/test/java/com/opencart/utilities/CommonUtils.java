@@ -15,8 +15,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.opencart.constants.Cons;
 import com.opencart.driverfactory.DriverFactory;
 import com.opencart.pageobjects.AccountRegistrationPage;
-import com.opencart.pageobjects.CartPage;
-import com.opencart.pageobjects.CheckoutPage;
 import com.opencart.pageobjects.HomePage;
 import com.opencart.pageobjects.LoginPage;
 import com.opencart.pageobjects.MyAccountPage;
@@ -55,8 +53,7 @@ public class CommonUtils {
 		PageFactory.initElements(DriverFactory.getDriver(), SearchResultsPage.getInstance());
 		PageFactory.initElements(DriverFactory.getDriver(), AccountRegistrationPage.getInstance());
 		PageFactory.initElements(DriverFactory.getDriver(), PDP_Page.getInstance());
-		PageFactory.initElements(DriverFactory.getDriver(), CartPage.getInstance());
-		PageFactory.initElements(DriverFactory.getDriver(), CheckoutPage.getInstance());
+	
 	}
 
 	public static void takeScreenshot(String screenshotNameWithExtension) {

@@ -28,20 +28,19 @@ public class SearchResultsPage extends BasePage{
 	WebElement searchResultsHeader;
 
 	
-	@FindBy(xpath = "//a[@href='http://localhost/opencart/upload/index.php?route=product/product&product_id=41&search=iMac']/img")
-	
-	WebElement iMacImage;
+	@FindBy(xpath = "(//img[@class='img-responsive'])[2]")
+	private WebElement iMacImage;
 
-	@FindBy(xpath = "(//a[@href='http://localhost/opencart/upload/index.php?route=product/product&product_id=41&search=iMac'])[2]")
+	@FindBy(xpath = "//div[@class='caption']//a[1]")
 	WebElement iMacName;
 	
 	@FindBy(xpath = "(//div[@id='content']//p)[2]")
 	WebElement searchResluts;
 	
-	@FindBy(xpath = "//a[@href='http://localhost/opencart/upload/index.php?route=product/product&product_id=41&search=iMac']//following::div[3]/button[2]")
+	@FindBy(xpath = "(//div[@class='button-group']//button)[2]")
 	WebElement iMacWishListBtn;
 	
-	@FindBy(xpath = "//a[@href='http://localhost/opencart/upload/index.php?route=product/product&product_id=41&search=iMac']//following::div[3]/button[3]")
+	@FindBy(xpath = "(//div[@class='button-group']//i)[3]")
 	WebElement iMacCompareBtn;
 	
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
@@ -50,16 +49,16 @@ public class SearchResultsPage extends BasePage{
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']//a[contains(text(), 'iMac')]")
 	WebElement wishListSuccessMessage;
 	
-	@FindBy(xpath = "(//a[@href='http://localhost/opencart/upload/index.php?route=account/wishlist'])[2]")
+	@FindBy(xpath = "(//div[contains(@class,'alert alert-success')]//a)[2]")
 	WebElement wishListLink;
 	
-	@FindBy(xpath = "(//a[@href='http://localhost/opencart/upload/index.php?route=product/compare'])[1]")
+	@FindBy(xpath = "(//div[contains(@class,'alert alert-success')]//a)[2]")
 	WebElement productComparisonLink;
 	
 	@FindBy(xpath = "//div[@class='product-thumb']")
 	WebElement productTile;
 	
-	@FindBy(xpath = "//img[@src='http://localhost/opencart/upload/image/cache/catalog/demo/imac_1-228x228.jpg']")
+	@FindBy(xpath = "(//img[@class='img-responsive'])[2]")
 	WebElement iMacImgLink;
 	
 	
@@ -69,7 +68,7 @@ public class SearchResultsPage extends BasePage{
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	WebElement cartAddedSuccessMessage;
 	
-	@FindBy(xpath = "(//a[@href='http://localhost/opencart/upload/index.php?route=product/product&product_id=41'])[3]//following::a[1]")
+	@FindBy(xpath = "//a[text()='iMac']/following-sibling::a")
 	WebElement shoppingCartLink;
 	
 	@FindBy(xpath = "//input[@id='button-search']//following::p[1]")

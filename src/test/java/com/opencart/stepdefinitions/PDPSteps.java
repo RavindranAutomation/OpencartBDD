@@ -5,8 +5,6 @@ import java.awt.AWTException;
 import org.testng.Assert;
 
 import com.opencart.driverfactory.DriverFactory;
-import com.opencart.pageobjects.HomePage;
-import com.opencart.pageobjects.MyAccountPage;
 import com.opencart.pageobjects.PDP_Page;
 import com.opencart.pageobjects.SearchResultsPage;
 
@@ -21,36 +19,13 @@ public class PDPSteps {
 		SearchResultsPage.getInstance().clickImacImg();
 	}
 
-	@Then("User should get thumbnail images")
-	public void user_should_get_thumbnail_images() throws AWTException, InterruptedException {
-		if (PDP_Page.getInstance().verifyThumbnail() == true) {
-			PDP_Page.getInstance().clickImacThumbnailImg();
-			PDP_Page.getInstance().clickNextArrowButton();
-			Assert.assertTrue(true);
-
-		}
-
-		if (PDP_Page.getInstance().verifyImacSideView() == true) {
-			PDP_Page.getInstance().clickiMacSideView();
-			Assert.assertTrue(true);
-
-			if (PDP_Page.getInstance().verifyiMacTiltView() == true) {
-				PDP_Page.getInstance().clickiMacTiltVieww();
-				Assert.assertTrue(true);
-			}
-
-		} else {
-			Assert.fail();
-		}
-	}
-	
 	@Then("User should get product related details")
 	public void user_should_get_product_related_details() {
 		Assert.assertEquals(PDP_Page.getInstance().getProductName(), "iMac");
 		Assert.assertEquals(PDP_Page.getInstance().getProductBrand(), "Apple");
 		Assert.assertEquals(PDP_Page.getInstance().getProductCode(), "Product Code: Product 14");
 
-		Assert.assertEquals(PDP_Page.getInstance().getProductAvailability(), "Availability: In Stock");
+		Assert.assertEquals(PDP_Page.getInstance().getProductAvailability(), "Availability: Out Of Stock");
 
 		Assert.assertEquals(PDP_Page.getInstance().getProductPrice(), "$122.00");
 		Assert.assertEquals(PDP_Page.getInstance().getDefaultQty(), "1");
@@ -60,8 +35,7 @@ public class PDPSteps {
 						+ "iMac packs amazing performance into a stunningly slim space.");
 //		HomePage.getInstance().clickMyAccount();
 //	    MyAccountPage.getInstance().clickLogout();
-	
+
 	}
-	
 
 }

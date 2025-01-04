@@ -26,9 +26,12 @@ public class MyAccountPage extends BasePage {
 
 	@FindBy(xpath = "//h2[text()='My Account']") // MyAccount Page heading
 	WebElement msgHeading;
-
-	@FindBy(xpath = "//a[@href='http://localhost/opencart/upload/index.php?route=account/logout']") // added in step6
-	WebElement lnkLogout;
+	
+	@FindBy(xpath = "//a[@href='https://naveenautomationlabs.com/opencart/index.php?route=account/logout']")   //added in step6
+	WebElement logoutOption;
+	
+	@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']/li[1]/a")
+	private WebElement myAccountOption;
 
 	public boolean isMyAccountPageExists() {
 		try {
@@ -40,7 +43,7 @@ public class MyAccountPage extends BasePage {
 
 	public void clickLogout() {
 
-		jSClick(lnkLogout);
+		jSClick(logoutOption);
 
 	}
 

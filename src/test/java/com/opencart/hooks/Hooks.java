@@ -20,7 +20,7 @@ public class Hooks {
 	public void beforeScenario() {
 		CommonUtils.loadProperties();
 		if (DriverFactory.getDriver() == null) {
-			DriverFactory.launchBrowser();
+			DriverFactory.launchBrowser(Cons.BrowserName);
 			DriverFactory.getDriver().get(Cons.Url);
 			DriverFactory.getDriver().manage().window().maximize();
 			DriverFactory.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

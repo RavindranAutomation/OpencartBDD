@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/resources/featureFiles/Checkout.feature",
+		features="src/test/resources/featureFiles",
 		glue= {"com.opencart.stepdefinitions","com.opencart.hooks"},
 		dryRun=!true,
 		monochrome=true,

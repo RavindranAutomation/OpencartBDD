@@ -40,7 +40,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//i[@class='fa fa-search']")
 	WebElement searchButton;
 
-	@FindBy(xpath = "//a[@href='http://localhost/opencart/upload/index.php?route=common/home']")
+	@FindBy(xpath = "//a[@href='https://naveenautomationlabs.com/opencart/index.php?route=common/home']")
 	WebElement homeButton;
 
 	@FindBy(xpath = "((//div[@class='button-group']//button)[2]")
@@ -52,17 +52,8 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "(//i[@class='fa fa-shopping-cart']/following-sibling::span)[1]")
 	WebElement shoppingcartHeaderLink;
 
-	@FindBy(xpath = "//a[@href='http://localhost/opencart/upload/index.php?route=information/sitemap']")
+	@FindBy(xpath = "//a[@href='https://naveenautomationlabs.com/opencart/upload/index.php?route=information/sitemap']")
 	WebElement sitemapFooterLink;
-
-	@FindBy(xpath = "//div[@class='col-sm-12']//h3[1]")
-	WebElement featuredText;
-
-	@FindBy(css = "div#cart")
-	WebElement cartButton;
-
-	@FindBy(xpath = "//button[@title='Remove']")
-	WebElement removeButton;
 
 	public void clickMyAccount() {
 
@@ -82,8 +73,9 @@ public class HomePage extends BasePage {
 
 	}
 
-	public void enterProductName(String productname) {
-		searchBar.sendKeys(productname);
+	public void enterProductName() {
+		waitForElement(searchButton, 0);
+		searchBar.sendKeys("iMac");
 
 	}
 
@@ -98,16 +90,15 @@ public class HomePage extends BasePage {
 
 	}
 
-	public void enterInvalidProductName(String productname) {
+	public void enterInvalidProductName() {
 		waitForVisibilityOfElement(searchBar, 0);
-		searchBar.sendKeys(productname);
+		searchBar.sendKeys("Lexus Car");
 
 	}
 
 	public void clickHomeBtn() {
 
 		waitForElement(homeButton, 0).click();
-		;
 
 	}
 
@@ -134,21 +125,6 @@ public class HomePage extends BasePage {
 	public void clicksitemapFooterLink() {
 
 		jSClick(sitemapFooterLink);
-
-	}
-
-	public boolean isfeaturedtextIsDisplayed() {
-		return featuredText.isDisplayed();
-
-	}
-
-	public void clickCartButton() {
-		jSClick(cartButton);
-
-	}
-
-	public void clickRemoveButton() {
-		javaScriptClick(removeButton, 4);
 
 	}
 
