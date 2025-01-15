@@ -20,6 +20,7 @@ import com.opencart.pageobjects.LoginPage;
 import com.opencart.pageobjects.MyAccountPage;
 import com.opencart.pageobjects.PDP_Page;
 import com.opencart.pageobjects.SearchResultsPage;
+import com.opencart.pageobjects.WishlistPage;
 
 public class CommonUtils {
 
@@ -53,7 +54,7 @@ public class CommonUtils {
 		PageFactory.initElements(DriverFactory.getDriver(), SearchResultsPage.getInstance());
 		PageFactory.initElements(DriverFactory.getDriver(), AccountRegistrationPage.getInstance());
 		PageFactory.initElements(DriverFactory.getDriver(), PDP_Page.getInstance());
-	
+		PageFactory.initElements(DriverFactory.getDriver(), WishlistPage.getInstance());
 	}
 
 	public static void takeScreenshot(String screenshotNameWithExtension) {

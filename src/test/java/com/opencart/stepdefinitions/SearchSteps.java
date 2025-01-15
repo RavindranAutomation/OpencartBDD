@@ -20,6 +20,7 @@ public class SearchSteps {
 		HomePage.getInstance().clickLogin();
 		LoginPage.getInstance().setEmail(Cons.Email);
 		LoginPage.getInstance().setPassword(Cons.Password);
+		LoginPage.getInstance().clickLogin();
 	}
 
 	@When("User enters valid product {string} into Search box field")

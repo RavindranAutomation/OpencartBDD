@@ -1,7 +1,5 @@
 package com.opencart.stepdefinitions;
 
-import java.awt.AWTException;
-
 import org.testng.Assert;
 
 import com.opencart.driverfactory.DriverFactory;
