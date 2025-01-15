@@ -7,6 +7,7 @@ Feature: Registration functionality
     And User selects Privacy Policy
     And User clicks on Continue button
     Then User account should get created successfully
+    And User should logout
 
   @Sanity @Regression @Master
   Scenario: User creates a duplicate account

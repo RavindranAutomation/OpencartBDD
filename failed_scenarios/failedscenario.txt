@@ -1,2 +1,0 @@
-file:src/test/resources/featureFiles/PDP.feature:5
-file:src/test/resources/featureFiles/Login.feature:14:26:27

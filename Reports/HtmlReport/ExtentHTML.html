@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 10, 2025 10:52:13 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 15, 2025 10:56:23 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +65,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,8 +76,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Regression</a></li>
 					<li><a href='#'>@Sanity</a></li>
+					<li><a href='#'>@Regression</a></li>
 					<li><a href='#'>@Master</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -122,12 +120,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$33%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>6</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
-                    2</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -140,12 +138,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='20%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>11</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='80%'>
-                    4</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -160,14 +158,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='32%'>
-                    <span class='strong'>11</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>66</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
-                    5</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='52%'>
-                    18</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -191,7 +189,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Add to cart functionality</span>
-						<span class='test-time'>Jan 10, 2025 10:52:15 pm</span>
+						<span class='test-time'>Jan 15, 2025 10:56:25 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -204,7 +202,7 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 11.163</span>
+	<span class='duration right label'>00 00 08.226</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User adding product into cart from search results page</div>
 	</div>
@@ -252,15 +250,20 @@
 
 
 		</li>
+		<li test-id='20' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.LoginSteps.user_should_logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</div>
+
+
+		</li>
 	</ul>
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='20'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='22'>
 					<div class='test-heading'>
 						<span class='test-name'>Login functionality</span>
-						<span class='test-time'>Jan 10, 2025 10:52:26 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>Jan 15, 2025 10:56:33 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -270,19 +273,19 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario outline node' test-id='21' status='fail'>
+<div class='scenario outline node' test-id='23' status='pass'>
 
-	<span class='duration right label'>00 00 10.436</span>
+	<span class='duration right label'>00 00 01.967</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Login with valid credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid credentials</div>
 	</div>
 	
 		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>pass</td></tr><tr><td>ravindrann10898@gmail.com</td><td>Test@12345</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='22' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login with valid credentials</div>
+		<li test-id='24' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid credentials</div>
 
 				<div class='category-list'>
 						<span class='category label'>@Sanity</span>
@@ -291,103 +294,47 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='24' class='gc given Fail' status='Fail'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User navigates to login page</h6>
+				<li test-id='26' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement {using=link text, value=Login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.HelperSteps.LoginApp(HelperSteps.java:10)
-	at com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page(LoginSteps.java:18)
-	at ✽.User navigates to login page(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/Login.feature:5)
-</textarea>
 				</li>
-				<li test-id='25' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.opencart.hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
+				<li test-id='28' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravindrann10898@gmail.com" into email field</h6>
 
-							<div class="node-step">Failed  - Login with valid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded1.png' src='../../screenshot/embedded1.png'>
-							</div>
 				</li>
-				<li test-id='26' class='gc when Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters email address "ravindrann10898@gmail.com" into email field</h6>
+				<li test-id='30' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@12345" into password field</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='28' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters password "Test@12345" into password field</h6>
+				<li test-id='32' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='30' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks on Login button</h6>
+				<li test-id='34' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get successfully logged in</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='32' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_get_successfully_logged_in()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should get successfully logged in</h6>
+				<li test-id='36' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_logout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</h6>
 
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='34' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_logout()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User should logout</h6>
-
-							<div class="node-step">Step skipped</div>
 				</li>
 			</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='36' status='fail'>
+<div class='scenario outline node' test-id='38' status='pass'>
 
-	<span class='duration right label'>00 00 20.608</span>
+	<span class='duration right label'>00 00 03.008</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Login with invalid credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with invalid credentials</div>
 	</div>
 	
 		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>pass</td></tr><tr><td>ravindn10898@gmail.com</td><td>Test@1345</td></tr><tr><td>ravik23n@yopmail.com</td><td>Test@145</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='37' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login with invalid credentials</div>
+		<li test-id='39' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with invalid credentials</div>
 
 				<div class='category-list'>
 						<span class='category label'>@Sanity</span>
@@ -396,85 +343,30 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='39' class='gc given Fail' status='Fail'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User navigates to login page</h6>
+				<li test-id='41' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement {using=link text, value=Login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.HelperSteps.LoginApp(HelperSteps.java:10)
-	at com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page(LoginSteps.java:18)
-	at ✽.User navigates to login page(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/Login.feature:18)
-</textarea>
 				</li>
-				<li test-id='40' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.opencart.hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
+				<li test-id='43' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravindn10898@gmail.com" into email field</h6>
 
-							<div class="node-step">Failed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded2.png' src='../../screenshot/embedded2.png'>
-							</div>
 				</li>
-				<li test-id='41' class='gc when Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters email address "ravindn10898@gmail.com" into email field</h6>
+				<li test-id='45' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@1345" into password field</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='43' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters password "Test@1345" into password field</h6>
+				<li test-id='47' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='45' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks on Login button</h6>
+				<li test-id='49' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should not get successfully logged in</h6>
 
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='47' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should not get successfully logged in</h6>
-
-							<div class="node-step">Step skipped</div>
 				</li>
 			</ul>
 		</li>
-		<li test-id='49' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login with invalid credentials</div>
+		<li test-id='51' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with invalid credentials</div>
 
 				<div class='category-list'>
 						<span class='category label'>@Sanity</span>
@@ -483,80 +375,25 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='51' class='gc given Fail' status='Fail'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User navigates to login page</h6>
+				<li test-id='53' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to login page</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement {using=link text, value=Login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.HelperSteps.LoginApp(HelperSteps.java:10)
-	at com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page(LoginSteps.java:18)
-	at ✽.User navigates to login page(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/Login.feature:18)
-</textarea>
 				</li>
-				<li test-id='52' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.opencart.hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</h6>
+				<li test-id='55' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters email address "ravik23n@yopmail.com" into email field</h6>
 
-							<div class="node-step">Failed  - Login with invalid credentials</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../../screenshot/embedded3.png' src='../../screenshot/embedded3.png'>
-							</div>
 				</li>
-				<li test-id='53' class='gc when Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_email_address_into_email_field(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters email address "ravik23n@yopmail.com" into email field</h6>
+				<li test-id='57' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters password "Test@145" into password field</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='55' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_enters_password_into_password_field(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters password "Test@145" into password field</h6>
+				<li test-id='59' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Login button</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='57' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_clicks_on_login_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks on Login button</h6>
+				<li test-id='61' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should not get successfully logged in</h6>
 
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='59' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.opencart.stepdefinitions.LoginSteps.user_should_not_get_successfully_logged_in()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should not get successfully logged in</h6>
-
-							<div class="node-step">Step skipped</div>
 				</li>
 			</ul>
 		</li>
@@ -564,11 +401,11 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='61'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='63'>
 					<div class='test-heading'>
 						<span class='test-name'>PDP verification functionality</span>
-						<span class='test-time'>Jan 10, 2025 10:52:57 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>Jan 15, 2025 10:56:38 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -578,11 +415,11 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='62' status='fail'>
+<div class='scenario node' test-id='64' status='pass'>
 
-	<span class='duration right label'>00 00 08.611</span>
+	<span class='duration right label'>00 00 03.517</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User verifies the pdp details of the product</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User verifies the pdp details of the product</div>
 	</div>
 	
 	
@@ -592,275 +429,355 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='64' class='node given Fail' status='Fail'>
-			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_opens_the_application())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User opens the Application</div>
+		<li test-id='66' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_opens_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens the Application</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:550)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.SearchSteps.user_opens_the_application(SearchSteps.java:20)
-	at ✽.User opens the Application(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/PDP.feature:6)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:442)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.SearchSteps.user_opens_the_application(SearchSteps.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
-</textarea>
 		</li>
-		<li test-id='65' class='node * Fail' status='Fail'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>com.opencart.hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</div>
+		<li test-id='68' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_enters_valid_product_into_search_box_field(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid product "iMac" into Search box field</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, screenshot []]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:550)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:326)
-	at com.opencart.hooks.Hooks.takeScreenshot(Hooks.java:36)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:442)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:326)
-	at com.opencart.hooks.Hooks.takeScreenshot(Hooks.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invokeStatic(Invoker.java:80)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:45)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.net.ConnectException
-	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
-	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
-	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
-	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.nio.channels.ClosedChannelException
-	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
-	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
-	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
-	... 9 more
-</textarea>
 		</li>
-		<li test-id='66' class='node when Skip' status='Skip'>
-			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_enters_valid_product_into_search_box_field(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User enters valid product "iMac" into Search box field</div>
+		<li test-id='70' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='68' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks on Search button</div>
+		<li test-id='72' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_should_get_valid_product_displayed_in_search_results())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get valid product displayed in search results</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='70' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_should_get_valid_product_displayed_in_search_results())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should get valid product displayed in search results</div>
+		<li test-id='74' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.PDPSteps.user_clicks_on_product_image())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on product image</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='72' class='node when Skip' status='Skip'>
-			<div class="step-name" title="(com.opencart.stepdefinitions.PDPSteps.user_clicks_on_product_image())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User clicks on product image</div>
+		<li test-id='76' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.PDPSteps.user_should_get_product_related_details())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get product related details</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='74' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.opencart.stepdefinitions.PDPSteps.user_should_get_product_related_details())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should get product related details</div>
+		<li test-id='78' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.LoginSteps.user_should_logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</div>
 
 
-					<div class="node-step">Step skipped</div>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='80'>
+					<div class='test-heading'>
+						<span class='test-name'>Registration functionality</span>
+						<span class='test-time'>Jan 15, 2025 10:56:42 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='81' status='pass'>
+
+	<span class='duration right label'>00 00 02.710</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User creates an account only with mandatory fields</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Sanity</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@Master</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='83' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_navigates_to_register_account_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Register Account page</div>
+
+
+		</li>
+		<li test-id='85' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_enters_the_values_in_the_mandatory_fields())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters the values in the mandatory fields</div>
+
+
+		</li>
+		<li test-id='87' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_selects_privacy_policy())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User selects Privacy Policy</div>
+
+
+		</li>
+		<li test-id='89' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_clicks_on_continue_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Continue button</div>
+
+
+		</li>
+		<li test-id='91' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_account_should_get_created_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User account should get created successfully</div>
+
+
+		</li>
+		<li test-id='93' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.LoginSteps.user_should_logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='95' status='pass'>
+
+	<span class='duration right label'>00 00 01.955</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User creates a duplicate account</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Sanity</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@Master</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='97' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_navigates_to_register_account_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Register Account page</div>
+
+
+		</li>
+		<li test-id='99' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_enters_the_details_into_below_fields_with_duplicate_email(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters the details into below fields with duplicate email</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>firstName</td><td>Ravi</td></tr><tr><td>lastName</td><td>Test</td></tr><tr><td>email</td><td>amotooricap4@gmail.com</td></tr><tr><td>telephone</td><td>1234567890</td></tr><tr><td>password</td><td>12345</td></tr></table></div>
+		</li>
+		<li test-id='101' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_selects_privacy_policy())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User selects Privacy Policy</div>
+
+
+		</li>
+		<li test-id='103' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_clicks_on_continue_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Continue button</div>
+
+
+		</li>
+		<li test-id='105' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.RegistrationSteps.user_should_get_a_proper_warning_about_duplicate_email())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a proper warning about duplicate email</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='107'>
+					<div class='test-heading'>
+						<span class='test-name'>Search functionality</span>
+						<span class='test-time'>Jan 15, 2025 10:56:46 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='108' status='pass'>
+
+	<span class='duration right label'>00 00 02.756</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User searches for a valid product</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Sanity</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@Master</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='110' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_opens_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens the Application</div>
+
+
+		</li>
+		<li test-id='112' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_enters_valid_product_into_search_box_field(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid product "iMac" into Search box field</div>
+
+
+		</li>
+		<li test-id='114' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</div>
+
+
+		</li>
+		<li test-id='116' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_should_get_valid_product_displayed_in_search_results())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get valid product displayed in search results</div>
+
+
+		</li>
+		<li test-id='118' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.LoginSteps.user_should_logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='120' status='pass'>
+
+	<span class='duration right label'>00 00 02.987</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User searches for an invalid product</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Sanity</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@Master</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='122' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_opens_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens the Application</div>
+
+
+		</li>
+		<li test-id='124' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_enters_invalid_product_into_search_box_field(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters invalid product "Honda" into Search box field</div>
+
+
+		</li>
+		<li test-id='126' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</div>
+
+
+		</li>
+		<li test-id='128' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_should_get_a_message_about_no_product_matching())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a message about no product matching</div>
+
+
+		</li>
+		<li test-id='130' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.LoginSteps.user_should_logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='132' status='pass'>
+
+	<span class='duration right label'>00 00 02.508</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User searches without any product</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@Master</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='134' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_opens_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens the Application</div>
+
+
+		</li>
+		<li test-id='136' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_dont_enter_any_product_name_into_search_box_field())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User dont enter any product name into Search box field</div>
+
+
+		</li>
+		<li test-id='138' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</div>
+
+
+		</li>
+		<li test-id='140' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_should_get_a_message_about_no_product_matching())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a message about no product matching</div>
+
+
+		</li>
+		<li test-id='142' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.LoginSteps.user_should_logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='144'>
+					<div class='test-heading'>
+						<span class='test-name'>Wishlist functionality</span>
+						<span class='test-time'>Jan 15, 2025 10:56:55 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='145' status='pass'>
+
+	<span class='duration right label'>00 00 03.711</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify wishlist page with search results product</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='147' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_opens_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens the Application</div>
+
+
+		</li>
+		<li test-id='149' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_enters_valid_product_into_search_box_field(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid product "iMac" into Search box field</div>
+
+
+		</li>
+		<li test-id='151' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_clicks_on_search_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks on Search button</div>
+
+
+		</li>
+		<li test-id='153' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.SearchSteps.user_should_get_valid_product_displayed_in_search_results())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get valid product displayed in search results</div>
+
+
+		</li>
+		<li test-id='155' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.WishlistSteps.user_clicks_on_the_wishlish_page_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on the wishlish page link</div>
+
+
+		</li>
+		<li test-id='157' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.WishlistSteps.user_should_see_the_added_product_from_the_list())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the added product from the list</div>
+
+
+		</li>
+		<li test-id='159' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.WishlistSteps.user_should_be_clear_the_wishlist())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should be clear the wishlist</div>
+
+
+		</li>
+		<li test-id='161' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.opencart.stepdefinitions.LoginSteps.user_should_logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should logout</div>
+
+
 		</li>
 	</ul>
 </div>
@@ -908,15 +825,15 @@ Caused by: java.nio.channels.ClosedChannelException
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Regression</span>
+						<span class='category-name'>@Sanity</span>
 						<span class='category-status right'>
-						<span class='label fail'>4</span>
+						<span class='label pass'>7</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -930,24 +847,39 @@ Caused by: java.nio.channels.ClosedChannelException
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 10, 2025 10:52:26 pm</td>
-										<td class='linked' test-id='22'>Login with valid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:33 pm</td>
+										<td class='linked' test-id='24'>Login with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:36 pm</td>
-										<td class='linked' test-id='37'>Login with invalid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:35 pm</td>
+										<td class='linked' test-id='39'>Login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:47 pm</td>
-										<td class='linked' test-id='49'>Login with invalid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:37 pm</td>
+										<td class='linked' test-id='51'>Login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:57 pm</td>
-										<td class='linked' test-id='62'>User verifies the pdp details of the product</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:42 pm</td>
+										<td class='linked' test-id='81'>User creates an account only with mandatory fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:44 pm</td>
+										<td class='linked' test-id='95'>User creates a duplicate account</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:46 pm</td>
+										<td class='linked' test-id='108'>User searches for a valid product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:49 pm</td>
+										<td class='linked' test-id='120'>User searches for an invalid product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -956,15 +888,15 @@ Caused by: java.nio.channels.ClosedChannelException
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Sanity</span>
+						<span class='category-name'>@Regression</span>
 						<span class='category-status right'>
-						<span class='label fail'>3</span>
+						<span class='label pass'>9</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 9</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -978,19 +910,49 @@ Caused by: java.nio.channels.ClosedChannelException
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 10, 2025 10:52:26 pm</td>
-										<td class='linked' test-id='22'>Login with valid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:33 pm</td>
+										<td class='linked' test-id='24'>Login with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:36 pm</td>
-										<td class='linked' test-id='37'>Login with invalid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:35 pm</td>
+										<td class='linked' test-id='39'>Login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:47 pm</td>
-										<td class='linked' test-id='49'>Login with invalid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:37 pm</td>
+										<td class='linked' test-id='51'>Login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:38 pm</td>
+										<td class='linked' test-id='64'>User verifies the pdp details of the product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:42 pm</td>
+										<td class='linked' test-id='81'>User creates an account only with mandatory fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:44 pm</td>
+										<td class='linked' test-id='95'>User creates a duplicate account</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:46 pm</td>
+										<td class='linked' test-id='108'>User searches for a valid product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:49 pm</td>
+										<td class='linked' test-id='120'>User searches for an invalid product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:52 pm</td>
+										<td class='linked' test-id='132'>User searches without any product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1001,13 +963,13 @@ Caused by: java.nio.channels.ClosedChannelException
 					<div class='category-heading'>
 						<span class='category-name'>@Master</span>
 						<span class='category-status right'>
-						<span class='label fail'>4</span>
+						<span class='label pass'>9</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 9</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -1021,24 +983,49 @@ Caused by: java.nio.channels.ClosedChannelException
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 10, 2025 10:52:26 pm</td>
-										<td class='linked' test-id='22'>Login with valid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:33 pm</td>
+										<td class='linked' test-id='24'>Login with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:36 pm</td>
-										<td class='linked' test-id='37'>Login with invalid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:35 pm</td>
+										<td class='linked' test-id='39'>Login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:47 pm</td>
-										<td class='linked' test-id='49'>Login with invalid credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:37 pm</td>
+										<td class='linked' test-id='51'>Login with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 10, 2025 10:52:57 pm</td>
-										<td class='linked' test-id='62'>User verifies the pdp details of the product</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 15, 2025 10:56:38 pm</td>
+										<td class='linked' test-id='64'>User verifies the pdp details of the product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:42 pm</td>
+										<td class='linked' test-id='81'>User creates an account only with mandatory fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:44 pm</td>
+										<td class='linked' test-id='95'>User creates a duplicate account</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:46 pm</td>
+										<td class='linked' test-id='108'>User searches for a valid product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:49 pm</td>
+										<td class='linked' test-id='120'>User searches for an invalid product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 15, 2025 10:56:52 pm</td>
+										<td class='linked' test-id='132'>User searches without any product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1054,503 +1041,7 @@ Caused by: java.nio.channels.ClosedChannelException
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.remote.UnreachableBrowserException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 10, 2025 10:52:57 pm</td>
-										<td class='linked' test-id='64'>Given User opens the Application</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:550)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.SearchSteps.user_opens_the_application(SearchSteps.java:20)
-	at ✽.User opens the Application(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/PDP.feature:6)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:442)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.SearchSteps.user_opens_the_application(SearchSteps.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Jan 10, 2025 10:53:06 pm</td>
-										<td class='linked' test-id='65'>com.opencart.hooks.Hooks.takeScreenshot(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:550)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.SearchSteps.user_opens_the_application(SearchSteps.java:20)
-	at ✽.User opens the Application(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/PDP.feature:6)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:442)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.SearchSteps.user_opens_the_application(SearchSteps.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 10, 2025 10:52:26 pm</td>
-										<td class='linked' test-id='24'>Given User navigates to login page</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement {using=link text, value=Login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.HelperSteps.LoginApp(HelperSteps.java:10)
-	at com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page(LoginSteps.java:18)
-	at ✽.User navigates to login page(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/Login.feature:5)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Jan 10, 2025 10:52:36 pm</td>
-										<td class='linked' test-id='39'>Given User navigates to login page</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement {using=link text, value=Login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.HelperSteps.LoginApp(HelperSteps.java:10)
-	at com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page(LoginSteps.java:18)
-	at ✽.User navigates to login page(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/Login.feature:5)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Jan 10, 2025 10:52:47 pm</td>
-										<td class='linked' test-id='51'>Given User navigates to login page</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Login"}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0fa51ab1f231a364f041c9499d2d4c4d, findElement {using=link text, value=Login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Ravin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65279}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65279/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at com.opencart.pageobjects.BasePage.jSClick(BasePage.java:38)
-	at com.opencart.pageobjects.HomePage.clickLogin(HomePage.java:72)
-	at com.opencart.stepdefinitions.HelperSteps.LoginApp(HelperSteps.java:10)
-	at com.opencart.stepdefinitions.LoginSteps.user_navigates_to_login_page(LoginSteps.java:18)
-	at ✽.User navigates to login page(file:///C:/Users/Ravin/git/OpencartBDDFramework/src/test/resources/featureFiles/Login.feature:5)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1558,37 +1049,37 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>34</div>
+					<div class='panel-lead'>66</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 10, 2025 10:52:13 pm</div>
+					<div class='panel-lead'>Jan 15, 2025 10:56:23 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 10, 2025 10:53:06 pm</div>
+			 		<div class='panel-lead'>Jan 15, 2025 10:56:59 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 52.598</div>
+					<div class='panel-lead'>00 00 35.431</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1604,30 +1095,30 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Regression</td>
+							<td>@Sanity</td>
+							<td>7</td>
 							<td>0</td>
-							<td>4</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@Sanity</td>
+							<td>@Regression</td>
+							<td>9</td>
 							<td>0</td>
-							<td>3</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@Master</td>
+							<td>9</td>
 							<td>0</td>
-							<td>4</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -1641,35 +1132,35 @@ Session ID: 0fa51ab1f231a364f041c9499d2d4c4d
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 3,
-				passParent: 1,
-				failParent: 2,
+                parentCount: 6,
+				passParent: 6,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 5,
-				passChild: 1,
-				failChild: 4,
+				childCount: 11,
+				passChild: 11,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 34,
-				passGrandChild: 11,
-				failGrandChild: 5,
+				grandChildCount: 66,
+				passGrandChild: 66,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 18,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Add to cart functionality":11.169,"Login functionality":31.08,"PDP verification functionality":8.611
+			        "Add to cart functionality":8.233,"Login functionality":5.012,"PDP verification functionality":3.517,"Registration functionality":4.685,"Search functionality":8.311,"Wishlist functionality":3.711
 			};
 		</script>
 		

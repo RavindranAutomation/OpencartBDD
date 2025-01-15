@@ -8,3 +8,4 @@ Feature: Wishlist functionality
     When User clicks on the wishlish page link
     Then User should see the added product from the list
     And User should be clear the wishlist
+    And User should logout

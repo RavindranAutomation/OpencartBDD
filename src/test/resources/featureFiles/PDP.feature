@@ -9,3 +9,4 @@ Feature: PDP verification functionality
     Then User should get valid product displayed in search results
     When User clicks on product image
     Then User should get product related details
+    And User should logout

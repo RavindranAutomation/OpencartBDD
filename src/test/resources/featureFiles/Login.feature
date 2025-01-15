@@ -1,6 +1,6 @@
 Feature: Login functionality
 
-  @Sanity @Regression @Master
+  @Sanity @Regression @Master 
   Scenario Outline: Login with valid credentials
     Given User navigates to login page
     When User enters email address "<email>" into email field

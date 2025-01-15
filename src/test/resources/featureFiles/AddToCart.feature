@@ -9,3 +9,4 @@ Feature: Add to cart functionality
     Then User should see "Success: You have added iMac to your shopping cart!" message
     When User clicks on CartButton
     Then User should see added product in the popup
+    And User should logout

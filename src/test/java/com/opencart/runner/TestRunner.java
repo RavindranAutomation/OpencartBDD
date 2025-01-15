@@ -4,10 +4,9 @@ import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/resources/featureFiles/Login.feature",
+		features="src/test/resources/featureFiles",
 		glue= {"com.opencart.stepdefinitions","com.opencart.hooks"},
 		dryRun=!true,
 		monochrome=true,
@@ -16,12 +15,12 @@ import io.cucumber.junit.CucumberOptions;
 		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:failed_scenarios/failedscenario.txt",
 				"html:target/cucumber-reports/Cucumber.html",
-		        "json:target/cucumber-reports/Cucumber.json"
-				
-				}
+				"json:target/cucumber-reports/Cucumber.json"
+
+		}
 		)
 
 public class TestRunner {
-    
+
 
 }

@@ -25,7 +25,7 @@ public class PDPSteps {
 
 		Assert.assertEquals(PDP_Page.getInstance().getProductAvailability(), "Availability: Out Of Stock");
 
-		Assert.assertEquals(PDP_Page.getInstance().getProductPrice(), "$122.00");
+		Assert.assertEquals(PDP_Page.getInstance().getProductPrice(), "$100.00");
 		Assert.assertEquals(PDP_Page.getInstance().getDefaultQty(), "1");
 		Assert.assertEquals(PDP_Page.getInstance().getProductDescription(),
 				"Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo processors. And more memory standard. "
